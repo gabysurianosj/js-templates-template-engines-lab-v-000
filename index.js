@@ -9,10 +9,11 @@ function createPost(){
    let postSection = postTemplate({postTitle: postTitle, postBody: postBody, postAuthor: postAuthor})
   let commentSection = commentsTemplate();
   let postDiv = document.getElementById(`post`)
-   postDiv.innerHTML = postSection;
+
+  postDiv.innerHTML = postSection;
   postDiv.getElementsByTagName(`footer`)[0].innerHTML = commentSection
  };
- 
+
  function  postComment(){
   let commentBody = document.getElementById(`commentBody`).value
   let commenter = document.getElementById(`commenter`).value
